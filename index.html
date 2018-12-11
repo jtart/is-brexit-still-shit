@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Is Brexit still shit?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Let's check if Brexit is still shit! It's a mystery...">
+    <style>
+      body {
+        background-color: #335252;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 6rem;
+        color:antiquewhite;
+      }
+      h2 {
+        font-size: 4rem;
+        color: #FDE5E2;
+      }
+      button {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Is Brexit still shit?</h1>
+      <h2 id='brexitResult'>Yup.</h2>
+      <button id='IWonderIfBrexitIsStillShit'>Let's check again!</button>
+    </main>
+  </body>
+  <script>
+    const resultsOfBrexitCheck = [
+      'Yup.',
+      'Yuppers',
+      'Totally',
+      'Aye aye',
+      'Yeah.',
+      'Obviously...',
+      'By all means',
+      'Fo’ shizzle',
+      'Roger',
+      'Yes',
+      'Uh-huh',
+      'Lol.',
+      'Affirmative'
+    ];
+    document.getElementById("IWonderIfBrexitIsStillShit").addEventListener("click", () => {
+      document.getElementById("brexitResult").innerHTML = resultsOfBrexitCheck[Math.floor(Math.random()*resultsOfBrexitCheck.length)];
+    });
+  </script>
+</html>
